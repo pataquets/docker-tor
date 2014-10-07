@@ -21,3 +21,6 @@ EXPOSE 9030
 
 # Default SOCKS5 proxy port 
 EXPOSE 9050
+
+# Default ControlPort
+EXPOSE 9051
