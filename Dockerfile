@@ -5,9 +5,13 @@ RUN \
 	gpg --keyserver keys.gnupg.net --recv 886DDD89 && \
 	gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 
-RUN DEBIAN_FRONTEND=noninteractive \
+RUN \
 	apt-get update && \
-	apt-get -y install deb.torproject.org-keyring tor && \
+	DEBIAN_FRONTEND=noninteractive \
+		apt-get -y install \
+			deb.torproject.org-keyring \
+			tor \
+	&& \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
