@@ -1,16 +1,16 @@
 FROM pataquets/ubuntu:trusty
 
 RUN \
-	apt-key adv --keyserver hkp://hkps.pool.sks-keyservers.net --recv-keys 886DDD89 && \
-	echo "deb http://deb.torproject.org/torproject.org $(lsb_release -cs) main" >> /etc/apt/sources.list && \
-	apt-get update && \
-	DEBIAN_FRONTEND=noninteractive \
-		apt-get -y install \
-			deb.torproject.org-keyring \
-			tor \
-	&& \
-	apt-get clean && \
-	rm -rf /var/lib/apt/lists/*
+  apt-key adv --keyserver hkp://hkps.pool.sks-keyservers.net --recv-keys 886DDD89 && \
+  echo "deb http://deb.torproject.org/torproject.org $(lsb_release -cs) main" >> /etc/apt/sources.list && \
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive \
+    apt-get -y install \
+      deb.torproject.org-keyring \
+      tor \
+  && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
 
 RUN mv /etc/tor/torrc /etc/tor/torrc.dpkg-dist
 
