@@ -1,0 +1,3 @@
+# Sets the relay to act as a "bridge" with respect to relaying connections from bridge users to the Tor network. It mainly causes Tor to publish a server descriptor to the bridge database, rather than to the public directory authorities.
+BridgeRelay 1
+

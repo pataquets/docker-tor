@@ -12,7 +12,11 @@ RUN \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
-RUN mv /etc/tor/torrc /etc/tor/torrc.dpkg-dist
+RUN \
+  mkdir -vp /etc/tor/conf-enabled/ && \
+  mv /etc/tor/torrc /etc/tor/torrc.dpkg-dist
+
+ADD files/etc/tor /etc/tor/
 
 # Default ORPort
 EXPOSE 9001

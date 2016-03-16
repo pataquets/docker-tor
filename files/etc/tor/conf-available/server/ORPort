@@ -1,0 +1,23 @@
+# Advertise this port to listen for connections from Tor clients and servers. This option is required to be a Tor server. Set it to "auto" to have Tor pick a port for you. Set it to 0 to not run an ORPort at all. This option can occur more than once. (Default: 0)
+#
+# Tor recognizes these flags on each ORPort:
+# **NoAdvertise**::
+#     By default, we bind to a port and tell our users about it. If
+#     NoAdvertise is specified, we don't advertise, but listen anyway.  This
+#     can be useful if the port everybody will be connecting to (for
+#     example, one that's opened on our firewall) is somewhere else.
+# **NoListen**::
+#     By default, we bind to a port and tell our users about it. If
+#     NoListen is specified, we don't bind, but advertise anyway.  This
+#     can be useful if something else  (for example, a firewall's port
+#     forwarding configuration) is causing connections to reach us.
+# **IPv4Only**::
+#     If the address is absent, or resolves to both an IPv4 and an IPv6
+#     address, only listen to the IPv4 address.
+# **IPv6Only**::
+#     If the address is absent, or resolves to both an IPv4 and an IPv6
+#     address, only listen to the IPv6 address.
+# For obvious reasons, NoAdvertise and NoListen are mutually exclusive, and
+# IPv4Only and IPv6Only are mutually exclusive.
+ORPort 0.0.0.0:9001 # [flags]
+

@@ -1,0 +1,3 @@
+# This option controls whether clients can use this server as a single hop proxy. If set to 1, clients can use this server as an exit even if it is the only hop in the circuit. Note that most clients will refuse to use servers that set this option, since most clients have ExcludeSingleHopRelays set. (Default: 0)
+AllowSingleHopExits 1
+
