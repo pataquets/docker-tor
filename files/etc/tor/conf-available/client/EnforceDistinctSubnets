@@ -1,0 +1,3 @@
+# If 1, Tor will not put two servers whose IP addresses are "too close" on the same circuit. Currently, two addresses are "too close" if they lie in the same /16 range. (Default: 1)
+EnforceDistinctSubnets 0
+
