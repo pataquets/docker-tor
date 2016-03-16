@@ -8,6 +8,7 @@ RUN \
     apt-get -y install \
       deb.torproject.org-keyring \
       tor \
+      tor-arm \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
