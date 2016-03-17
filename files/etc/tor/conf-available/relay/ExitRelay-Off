@@ -1,0 +1,6 @@
+#Tells Tor whether to run as an exit relay. If Tor is running as a non-bridge server, and ExitRelay is set to 1, then Tor allows traffic to exit according to the ExitPolicy option (or the default ExitPolicy if none is specified).
+#If ExitRelay is set to 0, no traffic is allowed to exit, and the ExitPolicy option is ignored.
+#
+#If ExitRelay is set to "auto", then Tor behaves as if it were set to 1, but warns the user if this would cause traffic to exit. In a future version, the default value will be 0. (Default: auto) 
+ExitRelay 0
+
