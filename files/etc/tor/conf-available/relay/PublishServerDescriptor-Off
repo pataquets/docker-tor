@@ -1,0 +1,6 @@
+# This option specifies which descriptors Tor will publish when acting as a relay. You can choose multiple arguments, separated by commas.
+# If this option is set to 0, Tor will not publish its descriptors to any directories. (This is useful if you’re testing out your server, or if you’re using a Tor controller that handles directory publishing for you.) Otherwise, Tor will publish its descriptors of all type(s) specified. The default is "1", which means "if running as a server, publish the appropriate descriptors to the authorities".
+PublishServerDescriptor 0
+
+
+
