@@ -1,0 +1,11 @@
+# A list of identity fingerprints, country codes, and address patterns of nodes to use as exit node---that is, a node that delivers traffic for you outside the Tor network. See the ExcludeNodes option for more information on how to specify nodes.
+#
+# Note that if you list too few nodes here, or if you exclude too many exit nodes with ExcludeExitNodes, you can degrade functionality. For example, if none of the exits you list allows traffic on port 80 or 443, you won’t be able to browse the web.
+#
+# Note also that not every circuit is used to deliver traffic outside of the Tor network. It is normal to see non-exit circuits (such as those used to connect to hidden services, those that do directory fetches, those used for relay reachability self-tests, and so on) that end at a non-exit node. To keep a node from being used entirely, see ExcludeNodes and StrictNodes.
+#
+# The ExcludeNodes option overrides this option: any node listed in both ExitNodes and ExcludeNodes is treated as excluded.
+#
+# The .exit address notation, if enabled via AllowDotExit, overrides this option. 
+ExitNodes {es}
+
