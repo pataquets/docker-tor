@@ -1,0 +1,3 @@
+# Set the server’s nickname to 'name'. Nicknames must be between 1 and 19 characters inclusive, and must contain only the characters [a-zA-Z0-9].
+Nickname PataquetsDockerTor
+
