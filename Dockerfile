@@ -7,6 +7,7 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
     apt-get -y install \
       deb.torproject.org-keyring \
+      obfsproxy \
       tor \
       tor-arm \
   && \
