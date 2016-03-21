@@ -1,0 +1,3 @@
+# When set (along with UseBridges), Tor will try to fetch bridge descriptors from the configured bridge authorities when feasible. It will fall back to a direct request if the authority responds with a 404. (Default: 0)
+UpdateBridgesFromAuthority 1
+
