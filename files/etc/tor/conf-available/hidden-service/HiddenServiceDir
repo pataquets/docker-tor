@@ -1,0 +1,4 @@
+# HiddenServiceDir DIRECTORY
+# Store data files for a hidden service in DIRECTORY. Every hidden service must have a separate directory. You may use this option multiple times to specify multiple services. DIRECTORY must be an existing directory. (Note: in current versions of Tor, if DIRECTORY is a relative path, it will be relative to current working directory of Tor instance, not to its DataDirectory. Do not rely on this behavior; it is not guaranteed to remain the same in future versions.)
+
+HiddenServiceDir ./hidden_service/
