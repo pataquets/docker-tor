@@ -1,3 +1,0 @@
-# This option controls whether circuits built by Tor will include relays with the AllowSingleHopExits flag set to true. If ExcludeSingleHopRelays is set to 0, these relays will be included. Note that these relays might be at higher risk of being seized or observed, so they are not normally included. Also note that relatively few clients turn off this option, so using these relays might make your client stand out. (Default: 1)
-ExcludeSingleHopRelays 0
-

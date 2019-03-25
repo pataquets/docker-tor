@@ -1,3 +1,0 @@
-# When this option is set, the attached Tor controller can use relays that have the AllowSingleHopExits option turned on to build one-hop Tor connections. (Default: 0)
-AllowSingleHopCircuits 1
-
