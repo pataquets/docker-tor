@@ -1,2 +1,3 @@
-SOCKSPort 0
+# https://www.torproject.org/docs/tor-manual.html.en#SocksPort
+SocksPort 0
 

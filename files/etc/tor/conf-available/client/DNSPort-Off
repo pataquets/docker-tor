@@ -1,3 +1,2 @@
 # https://www.torproject.org/docs/tor-manual.html.en#DNSPort
-DNSPort 0.0.0.0:53 # [isolation flags]
-
+DNSPort 0
