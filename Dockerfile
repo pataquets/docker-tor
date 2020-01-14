@@ -9,7 +9,7 @@ RUN \
   && \
   curl --silent --location \
     https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc \
-  | gpg --import \
+    | gpg --import \
   && \
   gpg --fingerprint 0xEE8CBC9E886DDD89 && \
   gpg --export 0xEE8CBC9E886DDD89 | apt-key add - \
@@ -22,7 +22,8 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
-  echo "deb https://deb.torproject.org/torproject.org xenial main" \
+  . /etc/lsb-release && \
+  echo "deb https://deb.torproject.org/torproject.org ${DISTRIB_CODENAME} main" \
     | tee /etc/apt/sources.list.d/tor.list \
   && \
   apt-get update && \
