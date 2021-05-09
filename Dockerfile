@@ -57,4 +57,4 @@ EXPOSE 9050
 # Default ControlPort
 EXPOSE 9051
 
-CMD [ "tor" ]
+ENTRYPOINT [ "tor" ]
