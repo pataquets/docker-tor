@@ -32,14 +32,16 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
     apt-get -y install \
       deb.torproject.org-keyring \
-      obfsproxy \
+      obfs4proxy \
       tor \
       tor-arm \
+      tor-geoipdb \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
+  mkdir -vp /etc/tor/conf.d/ && \
   mkdir -vp /etc/tor/conf-enabled/ && \
   mv /etc/tor/torrc /etc/tor/torrc.dpkg-dist
 
